@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ 
+    <title>ADAPTIVE NAV | CSS</title>
+    <style>
+        body{
+            background-color: #333;
+            margin: 0;
+           
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        a{
+           
+            text-decoration:none  ;
+        }
+        .navbar{
+            background-color:#222;
+        }
+        .navbar li{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .navbar a{
+            color:white;
+            display: block;
+            padding: 20px;
+        }
+        .navbar .bars{
+           display: none;
+        }
+        
+        @media (max-width: 780px ){
+            .navbar li{
+                display: none;
+            }
+        }
+        .navbar .logo,
+        .navbar .phone,
+        .navbar .bars
+         {
+         display: inline-block; 
+        }
+        .navbar .bars{
+           position: absolute; 
+           right: 20px;
+           top:  10px;
+        }
+       
+        
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="logo"><a href="">
+                <img src="https://icons.iconarchive.com/icons/3xhumed/mega-games-pack-05/72/BMW-M3-Challenge-1-icon.png">
+            </a></li>
+            <li><a href="">Nobis.</a></li>
+            <li><a href="">Magni.</a></li>
+            <li class="phone"><a href="tel:+123456789">123456789</a></li>
+            <li><a href="">Perspiciatis!</a></li>
+            <li><a href="">Impedit.</a></li>
+            <li><a href="">Reprehenderit.</a></li>
+            <li class="bars"><a href="">
+                <img src="https://icons.iconarchive.com/icons/sbstnblnd/plateau/48/Apps-menu-editor-icon.png">
+            </a></li>
+        </ul>
+    </nav>
+    
+</body>
+</html>
